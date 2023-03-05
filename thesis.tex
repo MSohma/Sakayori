@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt]{jsbook}
+\setlength{\textwidth}{\fullwidth}
+\setlength{\evensidemargin}{\oddsidemargin}
+\usepackage{thesis}
+\usepackage{makeidx}
+\usepackage{amsmath}
+\usepackage{txfonts, float}
+\usepackage{here}
+\usepackage[dvipdfmx]{graphicx}
+%\usepackage[noto-otc, unicode]{pxchfon}
+\usepackage{listings,jvlisting}
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+
+\begin{document}
+
+% 表紙
+\thesis{卒業論文}
+\date{2023年1月12日}
+\title{
+    \scalebox{1.5}{Y00-量子暗号における増幅の効果
+}
+}
+\teacher{相馬　正宜 教授}
+\organization{玉川大学 工学部　情報通信工学科}
+\author{酒寄　遥}
+
+\maketitle
+
+% 前書き
+%\include{abstract}
+%\frontmatter
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+% 本文
+\mainmatter
+%\include{sample} % 使い方を示す例
+\include{section1}
+\include{section1_5}
+\include{section2}
+\include{section3}
+\include{section4}
+\include{section5}
+\include{section6}
+%\include{acknowledgement}
+%\include{bibliography}
+\include{appendix1}
+\include{appendix2}
+
+% 後書き
+\backmatter
+\appendix
+
+\printindex
+\end{document}
